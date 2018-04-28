@@ -1,0 +1,75 @@
+
+nav {
+  float: right;
+  li {
+    float: right;
+  }
+}
+
+header {
+  z-index: 2;
+  position: relative;
+}
+
+.block--title {
+  float: left;
+  h1 {
+    float: left;
+    margin: .5em 1em .5em 0;
+    border-right: 1px solid #C8BDBC;
+    padding-right: 1em;
+    a, a:visited {
+      color: $base-header-color;
+    }
+    span {
+      display: block;
+      letter-spacing: .03em;
+      &:first-of-type {
+        font-family: $logo-font-family-1;
+        font-size: .87em;
+        text-transform: lowercase;
+      }
+      &:last-of-type {
+        font-family: $logo-font-family-2;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .block--title--subtitle {
+    float: left;
+    width: 45%;
+  }
+}
+
+.header--home {
+  background-image: url("../assets/img-homepage-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 580px;
+  margin-top: -5em;
+  position: relative;
+  z-index: 1;
+  border-bottom: 6px solid $light-grey;
+  h1 {
+    font-size: 3.8em;
+    position: absolute;
+    bottom: 2em;
+    width: 15%;
+    line-height: 1.1em;
+    text-transform: lowercase;
+    right: 25%;
+  }
+}
+
+.section {
+  padding: 5em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  font-family: $heading-font-family;
+  font-weight: normal;
+  color: $base-header-color;
+}
