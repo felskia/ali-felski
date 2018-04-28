@@ -1,8 +1,8 @@
 {
-  "name": "Ali Felski's Portfolio",
-  "description": "",
+  "name": "ali-felski",
+  "description": "Ali Felski's Portfolio",
   "version": "1.0.0",
-  "author": "Ali Felski <alifelski@gmail.com>",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
