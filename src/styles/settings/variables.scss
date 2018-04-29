@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/tix4lsc.css");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700');
 
 /* Colors
    ========================================================================== */
@@ -32,13 +32,13 @@ $text-body: #806B6B;
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'latoregular';
   src: url('../assets/fonts/lato-regular-webfont.woff2') format('woff2'),
       url('../assets/fonts/lato-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'latolight';
@@ -64,13 +64,13 @@ $text-body: #806B6B;
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'quincy_cfregular';
   src: url('../assets/fonts/quincycf-regular-webfont.woff2') format('woff2'),
       url('../assets/fonts/quincycf-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 $base-font-family: "latoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
@@ -82,7 +82,9 @@ $base-font-size: 1rem;
 $base-line-height: 1.5;
 $base-font-color: $text-body;
 
-$heading-font-family: 'ltc-bodoni-175', Georgia, serif;
+$heading-font-family: 'Playfair Display', Georgia, serif;
+$heading-font-bold: 700;
+$base-font-italic: 400i;
 
 $logo-font-family-2: 'barlow_condensedregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $logo-font-family-1: 'quincy_cfitalic', Georgia, serif;
