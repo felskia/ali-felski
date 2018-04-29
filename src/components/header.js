@@ -15,7 +15,6 @@ const Header = ({ siteTitle }) => (
       <nav>
         <ul>
           <li><Link to="/page-2/">About</Link></li>
-          <li><Link to="/page-2/">Contact</Link></li>
         </ul>
       </nav>
     </div>

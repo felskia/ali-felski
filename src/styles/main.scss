@@ -3,6 +3,8 @@ nav {
   float: right;
   li {
     float: right;
+    text-transform: lowercase;
+    margin-left: 2em;
   }
 }
 
@@ -33,12 +35,15 @@ header {
         font-family: $logo-font-family-2;
         font-size: 1em;
         text-transform: uppercase;
+        margin-top: -.15em;
       }
     }
   }
   .block--title--subtitle {
     float: left;
     width: 45%;
+    margin-top: 1.3em;
+    line-height: 1.6em;
   }
 }
 
@@ -48,23 +53,24 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 580px;
-  margin-top: -5em;
+  margin-top: -6em;
   position: relative;
   z-index: 1;
   border-bottom: 6px solid $light-grey;
+  background-position: 20% 0%;
   h1 {
     font-size: 3.8em;
     position: absolute;
-    bottom: 2em;
+    bottom: 1.6em;
     width: 15%;
     line-height: 1.1em;
     text-transform: lowercase;
-    right: 25%;
+    right: 22%;
   }
 }
 
 .section {
-  padding: 8em 0;
+  padding: 10em 0;
 }
 
 .section--centered {
@@ -76,6 +82,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   font-weight: normal;
   color: $base-header-color;
+  letter-spacing: -.03em;
+  margin: 0 0 1em;
+  line-height: 1em;
+}
+
+.withDescription {
+  margin-bottom: .2em;
+}
+
+.intro-copy {
+  font-size: 1.3em;
+  width: 50%;
+  margin: 0 auto 3em;
+  line-height: 1.8em;
+}
+
+.body-copy--lg {
+  font-size: 1.17em;
+  line-height: 1.7em;
 }
 
 .header--xlarge {
@@ -92,10 +117,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
   border: 4px solid $blue-color;
-  padding: .5em 2em .4em;
+  padding: 1em 2em .8em;
   font-family: $heading-font-family;
   color: $blue-color;
-  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .button--dark {
@@ -109,6 +135,15 @@ footer {
   background-position: top center;
   background-repeat: no-repeat;
   height: 500px;
+  position: relative;
+  margin-top: 5em;
+}
+
+.footer--content {
+  position: absolute;
+  top: 8em;
+  right: 20%;
+  width: 31%;
 }
 
 .project-thumb {
