@@ -64,7 +64,7 @@ header {
 }
 
 .section {
-  padding: 5em 0;
+  padding: 8em 0;
 }
 
 .section--centered {
@@ -96,4 +96,75 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   color: $blue-color;
   font-weight: bold;
+}
+
+.button--dark {
+  color: $base-header-color;
+  border: 4px solid $base-header-color;
+}
+
+footer {
+  background-image: url("../assets/img-footer.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.project-thumb {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  position: relative;
+  margin-bottom: 3em;
+  img {
+    display: block;
+    position: absolute;
+  }
+}
+
+.project-thumb--center {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.project-thumb--center-vert {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.project-thumb--lg {
+  height: 525px;
+  margin-right: 4%;
+  width: 55%;
+}
+
+.project-thumb--tall {
+  height: 688px;
+  width: 38%;
+}
+
+.project-thumb--sm {
+  height: 384px;
+  width: 38%;
+}
+
+.project-thumb--red {
+  background-color: $red-color;
+}
+
+.project-thumb--green {
+  background-color: $green-color;
+}
+
+.project-thumb--orange {
+  background-color: $orange-color;
+  margin-top: 141px;
+}
+
+.project-thumb--blue {
+  background-color: $blue-color;
 }
