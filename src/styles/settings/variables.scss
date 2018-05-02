@@ -32,14 +32,6 @@ $text-body: #806B6B;
   font-style: normal;
 }
 
-/*@font-face {
-  font-family: 'latoregular';
-  src: url('../assets/fonts/lato-regular-webfont.woff2') format('woff2'),
-      url('../assets/fonts/lato-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 @font-face {
     font-family: 'latolight';
     src: url('../assets/fonts/lato-light-webfont.woff2') format('woff2'),
@@ -63,14 +55,6 @@ $text-body: #806B6B;
   font-weight: normal;
   font-style: normal;
 }
-
-/*@font-face {
-  font-family: 'quincy_cfregular';
-  src: url('../assets/fonts/quincycf-regular-webfont.woff2') format('woff2'),
-      url('../assets/fonts/quincycf-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}*/
 
 $base-font-family: "latoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
