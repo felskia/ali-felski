@@ -92,6 +92,17 @@ header {
   text-align: center;
 }
 
+.split {
+  float: left;
+  &:first-of-type {
+    margin-right: 4em;
+  }
+}
+
+.split--half {
+  width: 47%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   font-family: $heading-font-family;
@@ -122,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 .body-copy--lg {
   font-size: 1.17em;
   line-height: 1.7em;
+}
+
+.header--xxlarge {
+  font-size: 10.714em;
 }
 
 .header--xlarge {
@@ -234,4 +249,18 @@ footer {
 
 .project-thumb--blue {
   background-color: $blue-color;
+}
+
+.about {
+  padding-top: 4em;
+  .split {
+    &:last-of-type {
+      padding-top: 2em;
+    }
+  }
+  h1 {
+    margin-bottom: .4em;
+    padding-bottom: .5em;
+    border-bottom: 4px solid $base-header-color;
+  }
 }
