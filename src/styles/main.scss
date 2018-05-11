@@ -103,6 +103,8 @@ header {
   width: 47%;
 }
 
+//type//
+
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   font-family: $heading-font-family;
@@ -157,6 +159,14 @@ h1, h2, h3, h4, h5, h6 {
 .header--medium {
   font-size: 3.429em;
 }
+
+b {
+  font-weight: $base-font-semibold;
+  color: darken($text-body, 20%);
+}
+
+
+//buttons//
 
 .button, .button:visited {
   border: 4px solid $blue-color;
@@ -263,4 +273,25 @@ footer {
     padding-bottom: .5em;
     border-bottom: 4px solid $base-header-color;
   }
+}
+
+//lists//
+.list--lg {
+  font-size: 1.12em;
+}
+
+dl { margin-bottom: 0;}
+dt, dd {display: inline-block;}
+dt { margin-right: .5em; }
+
+.list--bullet {
+  li {
+    margin-left: 1em;
+    list-style-type: disc;
+  }
+}
+
+//spacing//
+.margin-bottom--md {
+  margin-bottom: 1.5em;
 }
