@@ -95,12 +95,20 @@ header {
 .split {
   float: left;
   &:first-of-type {
-    margin-right: 4em;
+    margin-right: 8%;
   }
 }
 
 .split--half {
   width: 47%;
+}
+
+.split--60 {
+  width: 55%;
+}
+
+.split--40 {
+  width: 37%;
 }
 
 //type//
