@@ -1,10 +1,97 @@
 @import 'settings/variables.scss';
 @import 'settings/mixins.scss';
 
-.projects .project-thumb {
-  width: 30%;
+.project-thumb {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  position: relative;
+  margin-bottom: 3em;
+  img {
+    display: block;
+    position: absolute;
+  }
+}
+
+.project-thumb--center {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.project-thumb--center-vert {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.project-thumb--center-bottom {
+  bottom: 0;
+  margin: auto;
+}
+
+.project-thumb--lg {
+  height: 525px;
   margin-right: 4%;
-  &:nth-of-type(3n) {
-    margin-right: 0;
+  width: 55%;
+  @include media(xsmall-only) {
+    width: 100%;
+  }
+}
+
+.project-thumb--tall {
+  height: 688px;
+  width: 38%;
+}
+
+.project-thumb--sm {
+  height: 384px;
+  width: 38%;
+}
+
+.project-thumb--red {
+  background-color: $red-color;
+}
+
+.project-thumb--green {
+  background-color: $green-color;
+}
+
+.project-thumb--orange {
+  background-color: $orange-color;
+  margin-top: 141px;
+}
+
+.project-thumb--blue {
+  background-color: $blue-color;
+}
+
+
+
+.projects {
+  h1 {
+    margin: 2em 0 2em;
+    width: 65%;
+  }
+}
+
+.projects {
+  .project--up {
+    margin-top: -4em;
+  }
+  .project-thumb {
+    width: 30%;
+    margin-right: 4%;
+    overflow: hidden;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+  .project-thumb--sm {
+    height: 295px;
+  }
+  &:nth-of-type(4n) {
+    clear: left;
   }
 }
