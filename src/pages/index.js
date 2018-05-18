@@ -8,9 +8,11 @@ import image4 from '../assets/observe-thumb.jpg';
 
 const IndexPage = () => (
   <div>
-    <section className="header--home">
-      <div className="row">
-        <h1 className="header--xlarge">I love being curious</h1>
+    <section className="header--home--wrapper clearfix">
+      <div className="header--home">
+        <div className="row">
+          <h1 className="header--xlarge">I love being curious</h1>
+        </div>
       </div>
     </section>
     <section className="section section--centered">
