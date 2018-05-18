@@ -95,12 +95,20 @@ header {
 .split {
   float: left;
   &:first-of-type {
-    margin-right: 4em;
+    margin-right: 8%;
   }
 }
 
 .split--half {
   width: 47%;
+}
+
+.split--60 {
+  width: 55%;
+}
+
+.split--40 {
+  width: 37%;
 }
 
 //type//
@@ -143,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header--xlarge {
   font-size: 4.6em;
+  line-height: 1.3em;
   @include media(medium-down) {
     font-size: 4em;
   }
@@ -198,67 +207,6 @@ footer {
   top: 8em;
   right: 20%;
   width: 31%;
-}
-
-.project-thumb {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  float: left;
-  position: relative;
-  margin-bottom: 3em;
-  img {
-    display: block;
-    position: absolute;
-  }
-}
-
-.project-thumb--center {
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.project-thumb--center-vert {
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.project-thumb--lg {
-  height: 525px;
-  margin-right: 4%;
-  width: 55%;
-  @include media(xsmall-only) {
-    width: 100%;
-  }
-}
-
-.project-thumb--tall {
-  height: 688px;
-  width: 38%;
-}
-
-.project-thumb--sm {
-  height: 384px;
-  width: 38%;
-}
-
-.project-thumb--red {
-  background-color: $red-color;
-}
-
-.project-thumb--green {
-  background-color: $green-color;
-}
-
-.project-thumb--orange {
-  background-color: $orange-color;
-  margin-top: 141px;
-}
-
-.project-thumb--blue {
-  background-color: $blue-color;
 }
 
 .about {
