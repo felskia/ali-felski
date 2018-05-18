@@ -9,10 +9,7 @@ const About = () => (
       <div className="split split--40">
         <h1 className="header--xxlarge">About Me!</h1>
         <a className="button margin-bottom--md" href={resume} target="_blank">Download My Resume</a>
-        <dl className="list--lg">
-          <dt>Email me:</dt>
-          <dd>alifelski(at)gmail.com</dd>
-        </dl>
+        <a className="button margin-bottom--md" href="mailto:alifelski@gmail.com" >Email</a>
       </div>
       <div className="split split--60">
         <p>Originally from Michigan, Ali decided to escape the frigid temperatures of the north by going to art school in Savannah, GA. After earning a degree in graphic design from The Savannah College of Art and Design (SCAD - go bees), Ali moved to Washington, D.C., where she currently resides. After working in the industry for a number of years, Ali has been lucky enough to: use her design and user experience knowledge to bring life to client’s ideas, make design and UX more of a focus within the organizations she’s worked for, manage teams of designers and, teach UX to others, in the hope that we can all build more user friendly products. Most importantly, Ali lives to be challenged. She has worked for a number of different organizations from the Government, to non-profits, to advertising agencies, all with the hope of finding the next complex and interesting problem to solve.</p>
