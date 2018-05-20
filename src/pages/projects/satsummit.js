@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const About = () => (
+const Satsummit = () => (
   <div className="row">
     <div className="about">
       <div className="split split--half">
@@ -29,4 +29,4 @@ const About = () => (
   </div>
 )
 
-export default About
+export default Satsummit

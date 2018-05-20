@@ -1,16 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import image1 from '../assets/wapo-thumb.jpg';
-import image2 from '../assets/robotheads-thumb.jpg';
-import image3 from '../assets/satsummit-thumb.jpg';
-import image4 from '../assets/observe-thumb.jpg';
-import image5 from '../assets/nasa-thumb.jpg';
-import image6 from '../assets/sy-thumb.jpg';
-import image7 from '../assets/chemist-thumb.jpg';
-import image8 from '../assets/kiss-thumb.jpg';
+export { default as Kiss } from './kiss.js';
+export { default as Nasa } from './nasa.js';
+export { default as Observe } from './observe.js';
+export { default as Robots } from './robots.js';
+export { default as Satsummit } from './satsummit.js';
+export { default as SY } from './service-year.js';
+export { default as Wapo } from './wapo.js';
+export { default as Chemist } from './crazed-chemist.js';
 
-import '../styles/projects.scss'
+import image1 from '../../assets/wapo-thumb.jpg';
+import image2 from '../../assets/robotheads-thumb.jpg';
+import image3 from '../../assets/satsummit-thumb.jpg';
+import image4 from '../../assets/observe-thumb.jpg';
+import image5 from '../../assets/nasa-thumb.jpg';
+import image6 from '../../assets/sy-thumb.jpg';
+import image7 from '../../assets/chemist-thumb.jpg';
+import image8 from '../../assets/kiss-thumb.jpg';
+
+import '../../styles/projects.scss'
 
 const Projects = () => (
   <div className="row">
@@ -19,17 +28,17 @@ const Projects = () => (
       <ul>
         <li className="project-thumb project-thumb--red project-thumb--sm">
           <Link to="/projects/wapo">
-            <img className="project-thumb--center" src={image1} style={{width: "92%", bottom: "2em"}} alt="Image of Washington Post site" />
+            <img className="project-thumb--center" src={image1} style={{width: "92%", bottom: "2em"}} alt="Individual project page screenshots" />
           </Link>
         </li>
         <li className="project-thumb project-thumb--orange project-thumb--sm project--up">
           <Link to="/projects/robots">
-            <img className="project-thumb--center project-thumb--center-vert" src={image2} style={{width: "83%"}} alt="Illustrations of people as robots" />
+            <img className="project-thumb--center project-thumb--center-vert" src={image2} style={{width: "83%"}} alt="Individual project page screenshots" />
           </Link>
         </li>
         <li className="project-thumb project-thumb--blue project-thumb--sm">
           <Link to="/projects/satsummit">
-            <img className="img-about1" src={image3} style={{width: "90%", bottom: "0", left: "0"}} alt="Image of SatSummit site" />
+            <img className="img-about1" src={image3} style={{width: "90%", bottom: "0", left: "0"}} alt="Individual project page screenshots" />
           </Link>
         </li>
         <li className="project-thumb project-thumb--green project-thumb--sm">

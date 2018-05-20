@@ -140,5 +140,74 @@
 }
 
 .intro--project {
-  font-size: 2.143em;
+  font-size: 1.86em;
+  line-height: 1.6em;
+}
+
+.header--internal {
+  margin-top: -6.3em;
+  min-height: 600px;
+  h1 {
+    padding-top: 4em;
+    width: 70%;
+  }
+  .intro--project {
+    color: rgba(255,255,255,.8);
+    margin-bottom: 1.8em;
+    display: block;
+  }
+  .ali-tags {
+    width: 55%;
+    li {
+      color: #fff;
+      padding: 0em 1em;
+      display: inline-block;
+      font-family: $heading-font-family;
+      font-size: .86em;
+      margin-right: .8em;
+      margin-bottom: .8em;
+      background-color: #F67171;
+    }
+  }
+}
+
+.header--internal--white {
+  .intro--project {
+    color: rgba($base-header-color,.8);
+  }
+}
+
+.header--red {
+  background-color: #F75B5B;
+  .ali-tags {
+    li {
+      background-color: #F67171;
+    }
+  }
+}
+
+.header--red, .header--green, .header--blue {
+  h1 {
+    color: #fff;
+  }
+}
+
+.header--internal--wapo {
+  background-image: url("../assets/wapo-header.jpg");
+}
+
+.header--internal--sy {
+  background-image: url("../assets/sy-header.jpg");
+  background-size: 822px 555px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.body--internal {
+  padding: 6em 0;
+}
+
+.body--compressed-width {
+  width: 70%;
+  margin: 0 auto;
 }
