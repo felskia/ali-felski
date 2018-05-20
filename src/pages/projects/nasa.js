@@ -1,19 +1,26 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const About = () => (
-  <div className="row">
-    <div className="about">
-      <div className="split split--half">
-        <h1 className="header--xxlarge">About Me!</h1>
-        <Link className="button margin-bottom--md" to="/">Download My Resume</Link>
-        <dl className="list--lg">
-          <dt>Email me:</dt>
-          <dd>alifelski(at)gmail.com</dd>
-        </dl>
+const Nasa = () => (
+  <div>
+    <section className="header--internal header--blue">
+      <div className="row">
+        <h1 className="header--xlarge">Cumulus - NASA</h1>
+        <span>Building a complex system from the ground up.</span>
+        <ul className="ali-tags">
+          <li>Facilitated Kickoff Meeting</li>
+          <li>Competitive Analysis</li>
+          <li>Modular Stylesheet</li>
+          <li>Wireframes</li>
+          <li>User Flows</li>
+          <li>Prototypes</li>
+          <li>User Testing</li>
+        </ul>
       </div>
-      <div className="split split--half">
-        <p>Originally from Michigan, Ali decided to escape the frigid temperatures of the north by going to art school in Savannah, GA. After earning a degree in graphic design from The Savannah College of Art and Design (SCAD - go bees), Ali moved to Washington, D.C., where she currently resides. After working in the industry for a number of years, Ali has been lucky enough to: use her design and user experience knowledge to bring life to client’s ideas, make design and UX more of a focus within the organizations she’s worked for, manage teams of designers and, teach UX to others, in the hope that we can all build more user friendly products. Most importantly, Ali lives to be challenged. She has worked for a number of different organizations from the Government, to non-profits, to advertising agencies, all with the hope of finding the next complex and interesting problem to solve.</p>
+    </section>
+    <section>
+      <div className="row">
+        <p className="intro--project">Designed to allow young people to find and commit to a yearlong volunteer opportunity as well as a system to track and approve both volunteers and organizations.</p>
 
         <p>Although trained as a visual designer, Ali learned at a very early stage in her career the importance of UX. Not just that building a great experience, for the user, meant a great product but the value in UX deliverables. Building wireframes or user flows to allow her clients or coworkers to better understand her vision. Doing user testing and interviews to really understand what users want and need. Her mantra is, why guess at design and functionality when you can know what your clients and users want by asking them the right (non-leading) questions.</p>
         <div>
@@ -25,8 +32,8 @@ const About = () => (
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 )
 
-export default About
+export default Nasa

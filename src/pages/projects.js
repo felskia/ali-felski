@@ -18,28 +18,44 @@ const About = () => (
       <h1 className="header--xlarge">These are a few of my favorite things.</h1>
       <ul>
         <li className="project-thumb project-thumb--red project-thumb--sm">
-          <img className="project-thumb--center" src={image1} style={{width: "92%", bottom: "2em"}} alt="Individual project page screenshots" />
+          <Link to="/projects/wapo">
+            <img className="project-thumb--center" src={image1} style={{width: "92%", bottom: "2em"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--orange project-thumb--sm project--up">
-          <img className="project-thumb--center project-thumb--center-vert" src={image2} style={{width: "83%"}} alt="Individual project page screenshots" />
+          <Link to="/projects/robots">
+            <img className="project-thumb--center project-thumb--center-vert" src={image2} style={{width: "83%"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--blue project-thumb--sm">
-          <img className="img-about1" src={image3} style={{width: "90%", bottom: "0", left: "0"}} alt="Individual project page screenshots" />
+          <Link to="/projects/satsummit">
+            <img className="img-about1" src={image3} style={{width: "90%", bottom: "0", left: "0"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--green project-thumb--sm">
-          <img className="project-thumb--center project-thumb--center-vert" src={image4} style={{width: "80%", bottom: "-15em"}} alt="Individual project page screenshots" />
+          <Link to="/projects/observe">
+            <img className="project-thumb--center project-thumb--center-vert" src={image4} style={{width: "80%", bottom: "-15em"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--blue project-thumb--sm project--up">
-          <img className="project-thumb--center" src={image5} style={{width: "92%", bottom: "2em"}} alt="Individual project page screenshots" />
+          <Link to="/projects/nasa">
+            <img className="project-thumb--center" src={image5} style={{width: "92%", bottom: "2em"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--red project-thumb--sm">
-          <img className="project-thumb--center project-thumb--center-bottom" style={{width: "95%"}} src={image6}  alt="Individual project page screenshots" />
+          <Link to="/projects/service-year">
+            <img className="project-thumb--center project-thumb--center-bottom" style={{width: "95%"}} src={image6}  alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--blue project-thumb--sm">
-          <img className="project-thumb--center project-thumb--center-vert" src={image7} style={{width: "88%", bottom: "0", left: "0"}}alt="Individual project page screenshots" />
+          <Link to="/projects/crazed-chemist">
+            <img className="project-thumb--center project-thumb--center-vert" src={image7} style={{width: "88%", bottom: "0", left: "0"}}alt="Individual project page screenshots" />
+          </Link>
         </li>
         <li className="project-thumb project-thumb--green project-thumb--sm project--up">
-          <img className="project-thumb--center project-thumb--center-bottom" src={image8} style={{width: "88%"}} alt="Individual project page screenshots" />
+          <Link to="/projects/kiss">
+            <img className="project-thumb--center project-thumb--center-bottom" src={image8} style={{width: "88%"}} alt="Individual project page screenshots" />
+          </Link>
         </li>
       </ul>
     </div>
