@@ -146,6 +146,9 @@
 .header--internal {
   margin-top: -6.3em;
   min-height: 600px;
+  background-size: 822px 555px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   h1 {
     padding-top: 4em;
     width: 70%;
@@ -177,10 +180,19 @@
 }
 
 .header--red {
-  background-color: #F75B5B;
+  background-color: $red-color;
   .ali-tags {
     li {
       background-color: #F67171;
+    }
+  }
+}
+
+.header--blue {
+  background-color: $blue-color;
+  .ali-tags {
+    li {
+      background-color: lighten($blue-color, 10%);
     }
   }
 }
@@ -193,13 +205,18 @@
 
 .header--internal--wapo {
   background-image: url("../assets/wapo-header.jpg");
+  h1 {
+    padding-top: 3.5em;
+    width: 55%;
+  }
 }
 
 .header--internal--sy {
   background-image: url("../assets/sy-header.jpg");
-  background-size: 822px 555px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+}
+
+.header--internal--satsummit {
+  background-image: url("../assets/satsummit-header.jpg");
 }
 
 .body--internal {

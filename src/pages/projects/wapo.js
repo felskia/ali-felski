@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 
 const Wapo = () => (
   <div>
-    <section className="header--internal header--red">
+    <section className="header--internal header--red header--internal--wapo">
       <div className="row">
-        <h1 className="header--xlarge">Washington Post Election Graphics</h1>
-        <span>Modular system to tell the best story as the night progressed.</span>
+        <h1 className="header--xlarge withDescription">Washington Post Election Graphics</h1>
+        <span className="intro--project">Modular system to tell the best story as the night progressed.</span>
         <ul className="ali-tags">
           <li>Facilitated Kickoff Meeting</li>
           <li>Design</li>
@@ -14,7 +14,7 @@ const Wapo = () => (
         </ul>
       </div>
     </section>
-    <section>
+    <section className="body--internal">
       <div className="row">
         <p className="intro--project">Designed to allow young people to find and commit to a yearlong volunteer opportunity as well as a system to track and approve both volunteers and organizations.</p>
 

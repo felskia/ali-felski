@@ -3,18 +3,16 @@ import Link from 'gatsby-link'
 
 const Nasa = () => (
   <div>
-    <section className="header--internal header--blue">
+    <section className="header--internal header--blue header--internal--nasa">
       <div className="row">
         <h1 className="header--xlarge">Cumulus - NASA</h1>
-        <span>Building a complex system from the ground up.</span>
+        <span>Brining structure to a many pronged and messy system.</span>
         <ul className="ali-tags">
-          <li>Facilitated Kickoff Meeting</li>
-          <li>Competitive Analysis</li>
-          <li>Modular Stylesheet</li>
+          <li>User Interviews</li>
+          <li>Sitemap</li>
           <li>Wireframes</li>
-          <li>User Flows</li>
-          <li>Prototypes</li>
-          <li>User Testing</li>
+          <li>Design</li>
+          <li>Front-end Markup</li>
         </ul>
       </div>
     </section>
