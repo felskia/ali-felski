@@ -93,7 +93,6 @@
 }
 
 
-
 .projects {
   h1 {
     margin: 2em 0 2em;
@@ -210,4 +209,17 @@
 .body--compressed-width {
   width: 70%;
   margin: 0 auto;
+}
+
+.figure--left {
+  padding: 3em;
+  img {
+    float: left;
+    margin-right: 2em;
+  }
+  figcaption {
+    float: left;
+    display: block;
+    width: 25%;
+  }
 }

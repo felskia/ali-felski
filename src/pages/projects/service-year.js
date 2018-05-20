@@ -35,8 +35,8 @@ const SY = () => (
             <li>the Service Year admins manage the site. Approving or declining requests to join, providing support for their users and seeing how the platform was performing over time.</li>
           </ul>
         </div>
-        <figure>
-          <img src={sitemap} alt="Ali with gigantic sitemap" width="304" height="228" />
+        <figure className="figure--left clearfix">
+          <img src={sitemap} alt="Ali with gigantic sitemap" width="70%" />
           <figcaption>Ali with gigantic sitemap of the project we were about to undertake. Having a printed version enabled us to discuss the interface more easily as you could see the whole thing at once (while still being able to read the labels).</figcaption>
         </figure>
         <div className="body--compressed-width">
