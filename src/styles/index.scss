@@ -9,6 +9,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: #F1EEE8;
 }
 article,
 aside,
@@ -223,6 +224,7 @@ body {
   padding: 0 64px;
   display: block;
   width: auto;
+  margin: 0 auto;
   @include media(medium-down) {
     padding: 0 40px;
   }

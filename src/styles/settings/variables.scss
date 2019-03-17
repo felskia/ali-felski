@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i');
 
 /* Colors
    ========================================================================== */
@@ -6,24 +6,17 @@
 $blue-color: #46AEBB;                                //
 $green-color: #B1C94B;
 $red-color: #F75B5B;
-$orange-color: #F87E50;
+$orange-color: #FADDC1;
+$link-color: #F3B09C;
 
 $background-color-light: #FBFBFB;
-$base-header-color: #352425;
+$base-header-color: #234159;
 $light-grey: #EBEBEB;
-$text-body: #806B6B;
+$text-body: #343E3D;
 
 
 /* Typography
    ==========================================================================*/
-@font-face {
-  font-family: 'barlow_condensedregular';
-  src: url('../assets/fonts/barlowcondensed-regular-webfont.woff2') format('woff2'),
-      url('../assets/fonts/barlowcondensed-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face {
   font-family: 'latoitalic';
   src: url('../assets/fonts/lato-italic-webfont.woff2') format('woff2'),
@@ -48,14 +41,6 @@ $text-body: #806B6B;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'quincy_cfitalic';
-  src: url('../assets/fonts/quincycf-italic-webfont.woff2') format('woff2'),
-      url('../assets/fonts/quincycf-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 $base-font-family: "latoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
 $base-font-regular: "latoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -68,10 +53,7 @@ $base-font-color: $text-body;
 
 $heading-font-family: 'Playfair Display', Georgia, serif;
 $heading-font-bold: 700;
-$base-font-italic: 400i;
-
-$logo-font-family-2: 'barlow_condensedregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$logo-font-family-1: 'quincy_cfitalic', Georgia, serif;
+$heading-font-italic: 400i;
 
 /* Rows */
 $row-min-width: 320px;

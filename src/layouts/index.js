@@ -24,9 +24,7 @@ const Layout = ({ children, data }) => (
       <meta name="msapplication-TileColor" content="#b91d47"/>
       <meta name="theme-color" content="#ffffff"/>
     </Helmet>
-    <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
-    <Footer />
   </div>
 )
 

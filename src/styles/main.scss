@@ -5,127 +5,70 @@ a, a:visited {
   color: $text-body;
 }
 
-nav {
-  float: right;
+.logo {
+  border: 1px solid #fff;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+  padding: 1em;
+  display: block;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.429em;
+  line-height: 1.2em;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2em;
+  text-shadow: 5px 5px 3px rgba(9,47,67,.4);
+}
+
+.nav {
+  margin-top: 3em;
   li {
-    float: right;
+    display: inline-block;
+    color: $link-color;
+    margin: 0 2em;
     text-transform: lowercase;
-    margin-left: 2em;
-    padding: 2.5em 1.5em 0;
-    a, a:visited {
-      color: $base-header-color;
-    }
+    letter-spacing: .03em;
+    font-size: 1.142em;
+    font-family: $base-font-light;
+    text-shadow: 5px 5px 3px rgba(9,47,67,.4);
   }
-}
-
-header {
-  z-index: 2;
-  position: relative;
-}
-
-.block--title {
-  float: left;
-  h1 {
-    padding-right: .8em;
-    @include media(xsmall-up) {
-      border-right: 0;
-      float: none;
-      margin: .4em .8em .2em 0;
-    }
-    @include media(medium-up) {
-      border-right: 1px solid rgba(200, 189, 188, .5);
-      float: left;
-      margin: .8em .8em .5em 0;
-    }
-    a, a:visited {
-      color: $base-header-color;
-    }
-    span {
-      display: block;
-      letter-spacing: .03em;
-      &:first-of-type {
-        font-family: $logo-font-family-1;
-        font-size: .87em;
-        text-transform: lowercase;
-      }
-      &:last-of-type {
-        font-family: $logo-font-family-2;
-        font-size: 1em;
-        text-transform: uppercase;
-        margin-top: -.15em;
-      }
-    }
-  }
-  .block--title--subtitle {
-    @include media(xsmall-up) {
-      font-size: .85em;
-      float: none;
-      line-height: 1.2em;
-      width: 60%;
-      display: inline-block;
-    }
-    @include media(medium-up) {
-      float: left;
-      line-height: 1.8em;
-      margin-top: 1.7em;
-      width: 45%;
-      font-size: 1em;
-    }
-  }
-}
-
-.header--home--wrapper {
-  position: relative;
-  background-color: #E9DBD9;
 }
 
 .header--home {
-  background-image: url("../assets/img-homepage-header.jpg");
+  background-image: url("../assets/bg-header.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #E9DBD9;
-  position: relative;
+  background-color: #F1EEE8;
+  background-size: cover;
+  min-height: 1070px;
   z-index: 1;
-  border-bottom: 6px solid $light-grey;
-  @include media(xsmall-up) {
-    background-position: 39% 100%;
-    margin-top: -13em;
-    background-size: 900px auto;
-    height: 560px;
-  }
-  @include media(medium-up) {
-    background-position: 50% 0%;
-    margin-top: -6.4em;
-    background-size: cover;
-    position: relative;
-    height: 580px;
-  }
-  @include media(large-up) {
-    background-position: 60% 0%;
-  }
-  h1 {
-    text-transform: lowercase;
+  color: #fff;
+  text-align: center;
+  .header--xlarge {
+    text-shadow: 18px 18px 0px #092F43;
+    margin: 0 auto;
     @include media(xsmall-up) {
-      margin: 3em auto 0;
       text-align: center;
       width: 100%;
-      font-size: 3.6em;
       line-height: 1em;
     }
     @include media(medium-up) {
-      position: absolute;
-      bottom: 2.6em;
-      width: 15%;
-      right: 25%;
-      margin: 0;
-      text-align: left;
-      font-size: 3.8em;
+      text-align: center;
+      max-width: 70%;
+      color: #fff;
       line-height: 1.2em;
     }
   }
 }
 
-.section {
+.header-content-wrapper {
+  padding: 8em 0 0;
+}
+
+.section--internal {
   padding: 10em 0;
 }
 
@@ -133,61 +76,21 @@ header {
   text-align: center;
 }
 
-.split {
-  float: left;
-  &:first-of-type {
-    margin-right: 8%;
-  }
-}
-
-.split--half {
-  width: 47%;
-  @include media(small-down) {
-    width: 100%;
-  }
-}
-
-.split--60 {
-  width: 55%;
-  @include media(small-down) {
-    width: 100%;
-  }
-}
-
-.split--40 {
-  width: 37%;
-  @include media(small-down) {
-    width: 100%;
-  }
-}
-
 //type//
 
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   font-family: $heading-font-family;
-  font-weight: normal;
+  font-style: italic;
+  font-weight: 700;
   color: $base-header-color;
-  letter-spacing: -.03em;
-  margin: 0 0 1em;
+  margin: 0 0 .6em;
   line-height: 1em;
+  letter-spacing: .02em;
 }
 
 .withDescription {
   margin-bottom: .2em;
-}
-
-.intro-copy {
-  font-size: 1.3em;
-  width: 55%;
-  margin: 0 auto 3em;
-  line-height: 1.8em;
-  @include media(medium-down) {
-    width: 80%;
-  }
-  @include media(small-down) {
-    width: 100%;
-  }
 }
 
 .body-copy--lg {
@@ -209,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header--xlarge {
-  font-size: 4.6em;
+  font-size: 5em;
   line-height: 1.3em;
   @include media(medium-down) {
     font-size: 4em;
@@ -222,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header--large {
   font-size: 4em;
+  text-transform: lowercase;
   @include media(medium-down) {
     font-size: 3.44em;
   }
@@ -244,12 +148,10 @@ b {
 //buttons//
 
 .button, .button:visited {
-  border: 4px solid $blue-color;
-  padding:.7em 2em .6em;
-  font-family: $heading-font-family;
-  font-weight: $heading-font-bold;
+  border: 2px solid $blue-color;
+  padding:.5em 2em .4em;
+  font-family: $base-font-semibold;
   color: $blue-color;
-  text-transform: uppercase;
   display: inline-block;
   letter-spacing: .05em;
   @include media(small-down) {
@@ -260,7 +162,38 @@ b {
 
 .button--dark, .button--dark:visited  {
   color: $base-header-color;
-  border: 4px solid $base-header-color;
+  border: 2px solid $base-header-color;
+}
+
+.header--about {
+  position: relative;
+  padding-bottom: 15em;
+}
+
+.header--about--content {
+  float: right;
+  width: 47%;
+}
+
+.object--circle {
+  background-color: $orange-color;
+  width: 780px;
+  height: 780px;
+  content: " ";
+  display: block;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  border-radius: 400px;
+  position: absolute;
+  left: -300px;
+  z-index: 1;
+  bottom: -17em;
+}
+
+.img-bird {
+  position: absolute;
+  z-index: 2;
+  width: 240px;
 }
 
 footer {
