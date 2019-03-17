@@ -25,7 +25,6 @@ const Layout = ({ children, data }) => (
       <meta name="theme-color" content="#ffffff"/>
     </Helmet>
     {children()}
-    <Footer />
   </div>
 )
 

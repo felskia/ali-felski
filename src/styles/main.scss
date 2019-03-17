@@ -68,40 +68,12 @@ a, a:visited {
   padding: 8em 0 0;
 }
 
-.section {
+.section--internal {
   padding: 10em 0;
 }
 
 .section--centered {
   text-align: center;
-}
-
-.split {
-  float: left;
-  &:first-of-type {
-    margin-right: 8%;
-  }
-}
-
-.split--half {
-  width: 47%;
-  @include media(small-down) {
-    width: 100%;
-  }
-}
-
-.split--60 {
-  width: 55%;
-  @include media(small-down) {
-    width: 100%;
-  }
-}
-
-.split--40 {
-  width: 37%;
-  @include media(small-down) {
-    width: 100%;
-  }
 }
 
 //type//
@@ -112,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   font-weight: 700;
   color: $base-header-color;
-  margin: 0 0 1em;
+  margin: 0 0 .6em;
   line-height: 1em;
   letter-spacing: .02em;
 }
@@ -191,6 +163,37 @@ b {
 .button--dark, .button--dark:visited  {
   color: $base-header-color;
   border: 2px solid $base-header-color;
+}
+
+.header--about {
+  position: relative;
+  padding-bottom: 15em;
+}
+
+.header--about--content {
+  float: right;
+  width: 47%;
+}
+
+.object--circle {
+  background-color: $orange-color;
+  width: 780px;
+  height: 780px;
+  content: " ";
+  display: block;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  border-radius: 400px;
+  position: absolute;
+  left: -300px;
+  z-index: 1;
+  bottom: -17em;
+}
+
+.img-bird {
+  position: absolute;
+  z-index: 2;
+  width: 240px;
 }
 
 footer {
