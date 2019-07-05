@@ -4,6 +4,17 @@ import Link from 'gatsby-link'
 import image1 from '../assets/bird-lt.png';
 import image2 from '../assets/bird-sun.png';
 
+import image3 from '../assets/project-MT-mission.png';
+import image4 from '../assets/project-MT-site.png';
+import image5 from '../assets/project-WB-phone.png';
+import image6 from '../assets/project-xmas-card.png';
+import image7 from '../assets/project-wapo.png';
+import image8 from '../assets/project-satsummit.png';
+import image9 from '../assets/project-robot-heads.png';
+import image10 from '../assets/project-service-year.png';
+import image11 from '../assets/project-baking.png';
+import image12 from '../assets/project-cat.png';
+
 const IndexPage = () => (
   <div>
     <section className="clearfix">
@@ -22,6 +33,44 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+    </section>
+    <section className="header--projects section--internal">
+      <ul>
+        <li className="project">
+          <img src={image3} alt="Mariana Tek Values Illustrations" />
+        </li>
+        <li className="project">
+          <img src={image4} alt="Mariana Tek Website" />
+        </li>
+        <li className="project">
+          <img src={image5} alt="World Bank Mobile App" />
+        </li>
+        <li className="project">
+          <img src={image6} alt="Mariana Tek Holiday Card" />
+        </li>
+        <li className="project">
+          <img src={image7} alt="World Bank Mobile App" />
+        </li>
+        <li className="project">
+          <img src={image8} alt="WAPO Election Graphics" />
+        </li>
+        <li className="project">
+          <img src={image9} alt="Satsummit Website" />
+        </li>
+        <li className="project">
+          <img src={image10} alt="Robot Heads" />
+        </li>
+        <li className="project">
+          <img src={image11} alt="Service Year" />
+        </li>
+        <li className="project">
+          <img src={image12} alt="Baking Illustration" />
+        </li>
+        <li className="project">
+          <img src={image13} alt="Cat Illustraion" />
+        </li>
+      </ul>
+
     </section>
     <section className="header--about section--internal">
       <div className="row">
