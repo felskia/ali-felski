@@ -25,8 +25,8 @@ const IndexPage = () => (
             <h1 className="header--xlarge">Design, UX, Illustration & Design Direction</h1>
             <div className="nav">
               <ul>
-                <li>About</li>
                 <li>Work</li>
+                <li>About</li>
                 <li>Contact</li>
               </ul>
             </div>
@@ -35,51 +35,56 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="header--projects section--internal">
-      <ul>
-        <li className="project">
-          <img src={image3} alt="Mariana Tek Values Illustrations" />
-        </li>
-        <li className="project">
-          <img src={image4} alt="Mariana Tek Website" />
-        </li>
-        <li className="project">
-          <img src={image5} alt="World Bank Mobile App" />
-        </li>
-        <li className="project">
-          <img src={image6} alt="Mariana Tek Holiday Card" />
-        </li>
-        <li className="project">
-          <img src={image7} alt="World Bank Mobile App" />
-        </li>
-        <li className="project">
-          <img src={image8} alt="WAPO Election Graphics" />
-        </li>
-        <li className="project">
-          <img src={image9} alt="Satsummit Website" />
-        </li>
-        <li className="project">
-          <img src={image10} alt="Robot Heads" />
-        </li>
-        <li className="project">
-          <img src={image11} alt="Service Year" />
-        </li>
-        <li className="project">
-          <img src={image12} alt="Baking Illustration" />
-        </li>
-        <li className="project">
-          <img src={image13} alt="Cat Illustraion" />
-        </li>
-      </ul>
-
+      <div className="row">
+        <h2 className="header--large">My Work</h2>
+        <div className="wrapper--projects">
+          <div className="wrapper--projects-col wrapper--projects-col1">
+            <div className="project">
+              <img src={image3} alt="Mariana Tek Values Illustrations" />
+            </div>
+            <div className="project">
+              <img src={image6} alt="Mariana Tek Holiday Card" />
+            </div>
+            <div className="project">
+              <img src={image8} alt="Satsummit Website" />
+            </div>
+            <div className="project">
+              <img src={image11} alt="Baking Illustration" />
+            </div>
+          </div>
+          <div className="wrapper--projects-col wrapper--projects-col2">
+            <div className="project">
+              <img src={image4} alt="Mariana Tek Website" />
+            </div>
+            <div className="project">
+              <img src={image7} alt="WAPO elections" />
+            </div>
+            <div className="project">
+              <img src={image10} alt="Service Year" />
+            </div>
+            <div className="project">
+              <img src={image9} alt="Robot Heads" />
+            </div>
+          </div>
+          <div className="wrapper--projects-col wrapper--projects-col3">
+            <div className="project">
+              <img src={image5} alt="World Bank Mobile App" />
+            </div>
+            <div className="project">
+              <img src={image12} alt="Cat Illustration" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section className="header--about section--internal">
+    <section className="header--about">
       <div className="row">
         <span className="object--circle"></span>
         <span>
-          <img className="img-bird" src={image1} style={{width: "340px", bottom: "38em", left: "20em"}} alt="Individual project page screenshots" />
+          <img className="img-bird" src={image1} style={{width: "340px", top: "52em", left: "20em"}} alt="Individual project page screenshots" />
         </span>
         <span>
-          <img className="img-bird" src={image2} style={{width: "340px", bottom: "7em", left: "0"}} alt="Individual project page screenshots" />
+          <img className="img-bird" src={image2} style={{width: "340px", top: "18em", left: "-2em"}} alt="Individual project page screenshots" />
         </span>
         <div className="header--about--content">
           <h2 className="header--large">About me</h2>
