@@ -41,37 +41,47 @@ const IndexPage = () => (
         <div className="wrapper--projects">
           <div className="wrapper--projects-col wrapper--projects-col1">
             <div className="project">
+              <h3 className="header--xsmall project--label">Mariana Tek - Values Illustrations</h3>
               <img src={image3} alt="Mariana Tek Values Illustrations" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Mariana Tek - Holiday Card</h3>
               <img src={image6} alt="Mariana Tek Holiday Card" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Development Seed/Mapbox - Satsummit Website</h3>
               <img src={image8} alt="Satsummit Website" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Personal - Baking Illustration</h3>
               <img src={image11} alt="Baking Illustration" />
             </div>
           </div>
           <div className="wrapper--projects-col wrapper--projects-col2">
             <div className="project">
+              <h3 className="header--xsmall project--label">Mariana Tek - Company Website</h3>
               <img src={image4} alt="Mariana Tek Website" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Washington Post - Election Graphics</h3>
               <img src={image7} alt="WAPO elections" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Service Year - Company Website</h3>
               <img src={image10} alt="Service Year" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Sunlight Foundation - Employee Illustrations</h3>
               <img src={image9} alt="Robot Heads" />
             </div>
           </div>
           <div className="wrapper--projects-col wrapper--projects-col3">
             <div className="project">
+              <h3 className="header--xsmall project--label">World Bank - Surveying Mobile App</h3>
               <img src={image5} alt="World Bank Mobile App" />
             </div>
             <div className="project">
+              <h3 className="header--xsmall project--label">Personal - Cat Illustration</h3>
               <img src={image12} alt="Cat Illustration" />
             </div>
           </div>
