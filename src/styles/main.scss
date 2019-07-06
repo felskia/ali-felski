@@ -27,13 +27,19 @@ a, a:visited {
   margin-top: 3.5em;
   li {
     display: inline-block;
-    color: $link-color;
     margin: 0 3em;
     text-transform: lowercase;
     letter-spacing: .03em;
     font-size: 1.22em;
     font-family: $base-font-semibold;
     text-shadow: 5px 5px 3px rgba(9,47,67,.4);
+    a, a:link {
+      color: $link-color;
+      transition: 0.3s;
+      &:hover {
+        color: #FADDC1;
+      }
+    }
   }
 }
 
@@ -138,23 +144,29 @@ b {
 //buttons//
 
 .button, .button:visited {
-  border: 2px solid $blue-color;
+  border: 2px solid $link-color;
   padding:.3em 3em .3em;
   font-family: $base-font-semibold;
-  color: $blue-color;
+  color: $link-color;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin-top: 2em;
+  transition: 0.3s;
   @include media(small-down) {
     font-size: .86em;
     padding:.5em 2em .4em;
   }
+  &:hover {
+    background-color: $link-color;
+    border: 2px solid $link-color;
+    color: #fff;
+  }
 }
 
 .button--dark, .button--dark:visited  {
-  color: $base-header-color;
-  border: 2px solid $base-header-color;
+  color: darken($link-color, 10%);
+  border: 2px solid $link-color;
 }
 
 .header--about {

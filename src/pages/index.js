@@ -25,9 +25,9 @@ const IndexPage = () => (
             <h1 className="header--xlarge">Design, UX, Illustration & Design Direction</h1>
             <div className="nav">
               <ul>
-                <li>Work</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -36,6 +36,7 @@ const IndexPage = () => (
     </section>
     <section className="header--projects section--internal">
       <div className="row">
+        <a name="work">
         <h2 className="header--large">My Work</h2>
         <div className="wrapper--projects">
           <div className="wrapper--projects-col wrapper--projects-col1">
@@ -75,10 +76,12 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
+        </a>
       </div>
     </section>
     <section className="header--about">
       <div className="row">
+        <a name="about">
         <span className="object--circle"></span>
         <span>
           <img className="img-bird" src={image1} style={{width: "340px", top: "52em", left: "20em"}} alt="Individual project page screenshots" />
@@ -95,6 +98,7 @@ const IndexPage = () => (
           <p>I’m always looking for new and interesting challenges. Have one or just want to connect? I’d love to hear from you!</p>
           <Link className="button button--dark" to="mailto:alifelski@gmail.com">Reach Out</Link>
         </div>
+        </a>
       </div>
     </section>
   </div>
