@@ -16,24 +16,30 @@ a, a:visited {
   font-style: italic;
   font-weight: 400;
   font-size: 1.429em;
-  line-height: 1.2em;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 2em;
+  line-height: 1.4em;
+  width: 105px;
+  height: 105px;
+  margin: 0 auto 2.5em;
   text-shadow: 5px 5px 3px rgba(9,47,67,.4);
 }
 
 .nav {
-  margin-top: 3em;
+  margin-top: 3.5em;
   li {
     display: inline-block;
-    color: $link-color;
-    margin: 0 2em;
+    margin: 0 3em;
     text-transform: lowercase;
     letter-spacing: .03em;
-    font-size: 1.142em;
-    font-family: $base-font-light;
+    font-size: 1.22em;
+    font-family: $base-font-semibold;
     text-shadow: 5px 5px 3px rgba(9,47,67,.4);
+    a, a:link {
+      color: $link-color;
+      transition: 0.3s;
+      &:hover {
+        color: #FADDC1;
+      }
+    }
   }
 }
 
@@ -43,12 +49,12 @@ a, a:visited {
   background-repeat: no-repeat;
   background-color: #F1EEE8;
   background-size: cover;
-  min-height: 1070px;
+  min-height: 1170px;
   z-index: 1;
   color: #fff;
   text-align: center;
   .header--xlarge {
-    text-shadow: 18px 18px 0px #092F43;
+    text-shadow: 18px 18px 0px rgba(2,35,46,.5);
     margin: 0 auto;
     @include media(xsmall-up) {
       text-align: center;
@@ -65,7 +71,7 @@ a, a:visited {
 }
 
 .header-content-wrapper {
-  padding: 8em 0 0;
+  padding: 12em 0 0;
 }
 
 .section--internal {
@@ -98,16 +104,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7em;
   @include media(small-down) {
     font-size: .86em;
-  }
-}
-
-.header--xxlarge {
-  font-size: 10.714em;
-  @include media(medium-down) {
-    font-size: 8.714em;
-  }
-  @include media(xsmall-only) {
-    font-size: 5.714em;;
   }
 }
 
@@ -148,21 +144,29 @@ b {
 //buttons//
 
 .button, .button:visited {
-  border: 2px solid $blue-color;
-  padding:.5em 2em .4em;
+  border: 2px solid $link-color;
+  padding:.3em 3em .3em;
   font-family: $base-font-semibold;
-  color: $blue-color;
+  color: $link-color;
   display: inline-block;
+  text-transform: uppercase;
   letter-spacing: .05em;
+  margin-top: 2em;
+  transition: 0.3s;
   @include media(small-down) {
     font-size: .86em;
     padding:.5em 2em .4em;
   }
+  &:hover {
+    background-color: $link-color;
+    border: 2px solid $link-color;
+    color: #fff;
+  }
 }
 
 .button--dark, .button--dark:visited  {
-  color: $base-header-color;
-  border: 2px solid $base-header-color;
+  color: darken($link-color, 10%);
+  border: 2px solid $link-color;
 }
 
 .header--about {
@@ -173,6 +177,7 @@ b {
 .header--about--content {
   float: right;
   width: 47%;
+  margin-top: 26em;
 }
 
 .object--circle {
@@ -185,41 +190,15 @@ b {
   -moz-border-radius: 400px;
   border-radius: 400px;
   position: absolute;
-  left: -300px;
+  left: -345px;
   z-index: 1;
-  bottom: -17em;
+  top: 0em;
 }
 
 .img-bird {
   position: absolute;
   z-index: 2;
   width: 240px;
-}
-
-footer {
-  background-image: url("../assets/img-footer.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 500px;
-  position: relative;
-  margin-top: 5em;
-  @include media(small-down) {
-    background-position: 42% 1em;
-    height: 400px;
-  }
-}
-
-.footer--content {
-  position: absolute;
-  top: 8em;
-  right: 20%;
-  width: 31%;
-  @include media(small-down) {
-    width: 50%;
-    top: 6em;
-    right: 7%;
-  }
 }
 
 .about {
@@ -249,6 +228,31 @@ dt { margin-right: .5em; }
   li {
     margin-left: 1em;
     list-style-type: disc;
+  }
+}
+
+.wrapper--projects {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4em;
+}
+
+.wrapper--projects-col {
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-right: 3%;
+}
+
+.wrapper--projects-col2 {
+  margin-top: -5em;
+}
+
+.project {
+  margin-bottom: 1em;
+  img {
+    max-width: 100%;
   }
 }
 
