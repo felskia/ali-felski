@@ -75,7 +75,7 @@ a, a:visited {
 }
 
 .section--internal {
-  padding: 10em 0;
+  padding: 10em 0 0;
 }
 
 .section--centered {
@@ -175,11 +175,9 @@ b {
 
 .header--about {
   position: relative;
-  padding-bottom: 15em;
 }
 
 .header--about--content {
-  float: right;
   width: 47%;
   margin-top: 26em;
 }
@@ -194,7 +192,7 @@ b {
   -moz-border-radius: 400px;
   border-radius: 400px;
   position: absolute;
-  left: -345px;
+  right: -305px;
   z-index: 1;
   top: 0em;
 }
@@ -265,6 +263,22 @@ dt { margin-right: .5em; }
   margin-bottom: .7em;
   opacity: 0.5;
   font-weight: 300;
+}
+
+.header--contact {
+  background-image: url("../assets/whale-footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 2834px;
+  z-index: 1;
+  margin-top: -20em;
+}
+
+.contact--content {
+  width: 47%;
+  float: right;
+  padding-top: 52.5em;
 }
 
 //spacing//
