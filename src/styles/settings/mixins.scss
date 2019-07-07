@@ -44,6 +44,9 @@
   @if $arg == large-up {
     @media #{all} and (min-width: lower-bound($large-range)) { @content; }
   }
+  @if $arg == large-down {
+    @media #{all} and (max-width: upper-bound($large-range)) { @content; }
+  }
   @if $arg == large-only {
     @media #{all} and (min-width: lower-bound($large-range)) and (max-width: upper-bound($large-range)) { @content; }
   }

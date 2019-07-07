@@ -94,10 +94,10 @@ const IndexPage = () => (
         <a name="about">
         <span className="object--circle"></span>
         <span>
-          <img className="img-bird" src={image1} style={{width: "340px", top: "52em", right: "20em"}} alt="Individual project page screenshots" />
+          <img className="img-bird img-bird1" src={image1} alt="Individual project page screenshots" />
         </span>
         <span>
-          <img className="img-bird" src={image2} style={{width: "340px", top: "18em", right: "-2em"}} alt="Individual project page screenshots" />
+          <img className="img-bird img-bird2" src={image2} alt="Individual project page screenshots" />
         </span>
         <div className="header--about--content">
           <h2 className="header--large">About me</h2>
