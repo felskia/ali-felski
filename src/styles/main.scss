@@ -135,6 +135,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.429em;
 }
 
+.header--xsmall {
+  font-size: .86em;
+}
+
 b {
   font-weight: $base-font-semibold;
   color: darken($text-body, 20%);
@@ -250,10 +254,17 @@ dt { margin-right: .5em; }
 }
 
 .project {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   img {
     max-width: 100%;
   }
+}
+
+.project--label {
+  margin-left: .7em;
+  margin-bottom: .7em;
+  opacity: 0.5;
+  font-weight: 300;
 }
 
 //spacing//
