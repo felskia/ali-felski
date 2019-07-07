@@ -33,6 +33,9 @@ a, a:visited {
     font-size: 1.22em;
     font-family: $base-font-semibold;
     text-shadow: 5px 5px 3px rgba(9,47,67,.4);
+    @include media(xsmall-only) {
+      margin: 0 1.5em;
+    }
     a, a:link {
       color: $link-color;
       transition: 0.3s;
@@ -53,19 +56,23 @@ a, a:visited {
   z-index: 1;
   color: #fff;
   text-align: center;
+  @include media(medium-down) {
+    min-height: 900px;
+  }
   .header--xlarge {
     text-shadow: 18px 18px 0px rgba(2,35,46,.5);
     margin: 0 auto;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: center;
     @include media(xsmall-up) {
-      text-align: center;
       width: 100%;
-      line-height: 1em;
     }
-    @include media(medium-up) {
-      text-align: center;
+    @include media(large-down) {
+      max-width: 100%;
+    }
+    @include media(xlarge-up) {
       max-width: 70%;
-      color: #fff;
-      line-height: 1.2em;
     }
   }
 }
@@ -175,11 +182,18 @@ b {
 
 .header--about {
   position: relative;
+  @include media(small-down) {
+    padding-top: 15em;
+  }
 }
 
 .header--about--content {
   width: 47%;
   margin-top: 26em;
+  @include media(medium-down) {
+    width: 100%;
+    margin-top: 60em;
+  }
 }
 
 .object--circle {
@@ -195,25 +209,65 @@ b {
   right: -305px;
   z-index: 1;
   top: 0em;
+  @include media(large-down) {
+    width: 650px;
+    height: 650px;
+    right: -275px;
+  }
+  @include media(medium-down) {
+    width: 500px;
+    height: 500px;
+    right: -105px;
+  }
+  @include media(small-down) {
+    width: 480px;
+    height: 480px;
+    right: -105px;
+    top: 15em;
+  }
 }
 
 .img-bird {
   position: absolute;
   z-index: 2;
-  width: 240px;
+  width: 340px;
+  @include media(large-down) {
+    width: 310px;
+  }
+  @include media(small-down) {
+    width: 280px;
+  }
 }
 
-.about {
-  padding-top: 4em;
-  .split {
-    &:last-of-type {
-      padding-top: 2em;
-    }
+.img-bird1 {
+  top: 52em;
+  right: 20em;
+  @include media(large-down) {
+    top: 48em;
+    right: 15em;
   }
-  h1 {
-    margin-bottom: .4em;
-    padding-bottom: .5em;
-    border-bottom: 4px solid $base-header-color;
+  @include media(medium-down) {
+    top: 30em;
+    right: 27em;
+  }
+  @include media(small-down) {
+    top: 50em;
+    left: 0;
+  }
+}
+
+.img-bird2 {
+  top: 18em;
+  right: -2em;
+  @include media(large-down) {
+    top: 14em;
+  }
+  @include media(medium-down) {
+    top: 10em;
+    right: 0em;
+  }
+  @include media(small-down) {
+    top: 25em;
   }
 }
 
@@ -245,6 +299,13 @@ dt { margin-right: .5em; }
   flex: 0 0 30%;
   max-width: 30%;
   margin-right: 3%;
+  @include media(xsmall-only) {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 100%;
+  }
 }
 
 .wrapper--projects-col2 {
@@ -273,12 +334,36 @@ dt { margin-right: .5em; }
   min-height: 2834px;
   z-index: 1;
   margin-top: -20em;
+  @include media(large-down) {
+    min-height: 2100px;
+    margin-top: 0em;
+  }
+  @include media(small-down) {
+    min-height: 1500px;
+    background-position: right;
+  }
+  @include media(xsmall-only) {
+    min-height: 1000px;
+  }
 }
 
 .contact--content {
   width: 47%;
   float: right;
   padding-top: 52.5em;
+  @include media(large-down) {
+    padding-top: 39em;
+  }
+  @include media(medium-down) {
+    padding-top: 27em;
+  }
+  @include media(small-down) {
+    padding-top: 20em;
+  }
+  @include media(xsmall-only) {
+    padding-top: 17.5em;
+    width: 53%;
+  }
 }
 
 //spacing//
